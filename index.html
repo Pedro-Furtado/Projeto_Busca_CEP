@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Cep</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 id="h1_title">Busca por CEP</h1>
+        <form action="">
+            
+            <input type="text" id="cep_input" placeholder="Informe o CEP">
+            <!--
+                Exemplos de CEP para testes
+
+                GO - 74550020
+                RJ - 27949316
+                RS - 90040320
+                SP - 11674771
+                TO - 77001024
+                TO - 77022368
+            -->
+            <button id="button">Buscar</button>
+        </form>
+        <div class="form" id="form">
+            <div>
+                <h2>Endereço :</h2>
+                <p id="endereco"></p>
+            </div>
+            <div>
+                <h2>Bairro :</h2>
+                <p id="bairro"></p>
+            </div>
+            <div>
+                <h2>Cidade :</h2>
+                <p id="cidade"></p>
+            </div>
+            <div>
+                <h2>UF :</h2>
+                <p id="uf"></p>
+            </div>
+            <div>
+                <h2>DDD :</h2>
+                <p id="ddd"></p>
+            </div>
+        </div>
+    </main>
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --color-main:linear-gradient(100deg, rgb(31, 114, 89), black);
+    --color-text:white;
+    --color-button-text:rgb(31, 114, 89);
+    --color-button-hover:rgb(33, 165, 125);
+    --color-div:white;
+    --color-div-text:black;
+}
+body{
+    background:var(--color-main);
+    color: var(--color-text);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    gap: 5px;
+}
+main h1{
+    font-size: 70px;
+    cursor: pointer;
+}
+main form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+main form input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 15px;
+    border: none;
+    font-size: 15px;
+}
+main form input::placeholder{
+    font-size: 15px;
+}
+main form input:focus{
+    outline: none;
+}
+main form button{
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: var(--color-button-text);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .2s;
+    padding: 5px;
+}
+main form button:hover{
+    background: var(--color-button-hover);
+    color: var(--color-text);
+}
+main .form{
+    width: 375px;
+    background: var(--color-div);
+    border-radius: 5px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 2px;
+    color: var(--color-div-text);
+}
+main div div{
+    width: 100%;
+    height: 40px;
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+main div div h2{
+    font-size: 16px;
+}
+main div div p{
+    font-size: 15px;
+}
+
+@media screen and (max-width:767px){
+    main h1{
+        font-size: 40px;
+    }
+    main form{
+        flex-direction: column;
+    }
+    main form input{
+        width: 280px;
+    }
+    main form button{
+        width: 280px;
+        background: var(--color-button-hover);
+        color: var(--color-text);
+        transition: none;
+    }
+    main .form{
+        width: 280px;
+        gap: 20px;
+    }
+    main div div{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0px;
+    }
+}
